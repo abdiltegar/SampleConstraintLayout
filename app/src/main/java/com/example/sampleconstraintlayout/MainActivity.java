@@ -1,6 +1,8 @@
 package com.example.sampleconstraintlayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,6 +45,15 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Password yang anda masukkan salah", Toast.LENGTH_LONG).show();
                 }else{//jika tidak maka email dan password benar
                     Toast.makeText(getApplicationContext(), "Login Berhasil", Toast.LENGTH_LONG).show();
+
+                    Bundle b = new Bundle();
+                    b.putString("a",nama.trim());
+                    b.putString("b",password.trim());
+
+                    Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                    i.putExtras(b);
+
+                    startActivity(i);
                 }
             }
         });
