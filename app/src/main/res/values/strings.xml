@@ -8,4 +8,11 @@
     <string name="txPassword">Ini hasil Password</string>
     <string name="var1">ini pesan</string>
     <string name="label2">Login Berhasil</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="lDaftar">Daftar</string>
+    <string name="eNama">Masukkan Nama</string>
+    <string name="eEmail">Masukkan Email</string>
+    <string name="ePass">Masukkan Password</string>
+    <string name="eRePass">Masukkan Password Kembali</string>
+    <string name="eAlamat">Masukkan Alamat</string>
 </resources>
