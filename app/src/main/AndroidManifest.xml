@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleConstraintLayout">
-        <activity android:name=".DaftarActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ActivityLihatData"
+            android:parentActivityName=".Home_Activity"></activity>
+        <activity android:name=".Home_Activity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DaftarActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"
